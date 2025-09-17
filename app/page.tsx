@@ -3,6 +3,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
 import DXLogo from "./ui/dx-logo";
+import LikeButton from "./like-button";
 
 export default function Page() {
   return (
@@ -32,6 +33,7 @@ export default function Page() {
             >
               <span>Dashboard</span> <ArrowRightIcon className="w-5 md:w-6" />
             </Link>
+            <LikeButton />
           </div>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
