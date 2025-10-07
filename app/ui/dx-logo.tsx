@@ -1,14 +1,9 @@
 export default function DXLogo() {
   return (
     <div className={`flex flex-row items-center leading-none text-white`}>
-      {/* 
-      <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" />
-      <div className="w-[44px] ">
-      */}
       <div className="w-[44px] p-[3px]">
         <Logo />
       </div>
-
       <p className="text-[44px]">Dash</p>
     </div>
   );
