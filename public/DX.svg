@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- glow filter -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- big X with glow -->
+  <g fill="none" stroke="#fff" stroke-width="64" stroke-linecap="square" filter="url(#glow)">
+    <line x1="64" y1="64" x2="448" y2="448"/>
+    <line x1="64" y1="448" x2="448" y2="64"/>
+  </g>
+
+  <!-- left triangle with glow -->
+  <polygon fill="#fff" points="84,256 18,192 18,320" filter="url(#glow)"/>
+</svg>
